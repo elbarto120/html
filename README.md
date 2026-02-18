@@ -2,10 +2,9 @@
 
 ## 1. Introducción
 
-Este simulador web interactivo permite visualizar y comparar en tiempo real el funcionamiento de dos algoritmos fundamentales de asignación de memoria: **Best Fit** y **Worst Fit**. La herramienta está diseñada para facilitar la comprensión de cómo los sistemas operativos gestionan la memoria RAM cuando múltiples procesos compiten por recursos limitados.
+Este simulador web interactivo fue desarrollado para visualizar y comparar en tiempo real el comportamiento de dos algoritmos clásicos de asignación de memoria: Best Fit y Worst Fit. Su propósito es facilitar la comprensión de cómo un sistema operativo administra la memoria RAM cuando varios procesos intentan ejecutarse al mismo tiempo y compiten por recursos limitados.
 
-El simulador ofrece una interfaz visual intuitiva que muestra el estado de los bloques de memoria, la asignación de procesos, y las métricas de rendimiento de cada algoritmo, permitiendo a los usuarios experimentar con diferentes configuraciones y observar directamente las diferencias en el comportamiento de cada estrategia de asignación.
-
+La herramienta presenta una interfaz gráfica sencilla donde se pueden observar los bloques de memoria, los procesos asignados y las métricas de rendimiento. Esto permite experimentar con distintos tamaños de bloques y procesos para analizar cómo cambia la eficiencia dependiendo del algoritmo utilizado.
 ### ¿Qué significan los resultados?
 
 - **Procesos Asignados**: Cantidad de procesos que lograron ser asignados a bloques de memoria.
@@ -84,7 +83,7 @@ Los algoritmos de asignación de memoria son fundamentales en el diseño de sist
 
 ### Información del Proyecto
 
-- **Estudiante**: Enrique Zavala
+- **Estudiante**: Gael Magaña Chan
 - **Matrícula**: SW2509057
 - **Materia**: Sistemas Operativos
 - **Profesor**: Jorge Javier Pedroza Romero
@@ -94,18 +93,7 @@ Los algoritmos de asignación de memoria son fundamentales en el diseño de sist
 
 ### CLausula de IA 
 
-yo Enrique Zavala Si use IA
-use Claude 
-
-promp: como peudo darle mejor formato a mi readme
-
-
-Respuesta de la IA: Guía para darle mejor formato a tu README
-Elementos esenciales de un buen README:
-1. Título y Descripción
-markdown# Nombre del Proyecto
-
-Una breve descripción de qué hace tu proyecto (1-2 líneas).
+yo Gael Magaña Chan NO use IA
 
 ## 📝 Descripción
 
