@@ -7,17 +7,46 @@ Este simulador web interactivo fue desarrollado para visualizar y comparar en ti
 La herramienta presenta una interfaz gráfica sencilla donde se pueden observar los bloques de memoria, los procesos asignados y las métricas de rendimiento. Esto permite experimentar con distintos tamaños de bloques y procesos para analizar cómo cambia la eficiencia dependiendo del algoritmo utilizado.
 ### ¿Qué significan los resultados?
 
-- **Procesos Asignados**: Cantidad de procesos que lograron ser asignados a bloques de memoria.
-- **Fragmentación**: Suma total de espacios libres en todos los bloques. Una fragmentación menor indica un uso más eficiente de la memoria.
-- **Análisis Comparativo**: Identifica qué algoritmo presenta menor fragmentación para la configuración específica.
-- **Bloques coloreados**: Los bloques ocupados se muestran en azul, mientras que los libres aparecen en gris.
+- Procesos asignados: Número de procesos que lograron colocarse en la memoria disponible.
+
+Fragmentación total: Cantidad de espacio libre que queda distribuido en los bloques después de las asignaciones. Mientras menor sea este valor, mejor aprovechamiento de la memoria existe.
+
+Comparación automática: El simulador indica qué algoritmo obtuvo menor fragmentación en el escenario actual.
+
+Representación visual: Los bloques ocupados aparecen en azul y los espacios libres en gris.
 
 ## 3. Explicación de los Algoritmos
 
 ### Best Fit (Mejor Ajuste)
 
-**Funcionamiento**: El algoritmo Best Fit busca entre todos los bloques de memoria disponibles aquel que tenga el tamaño más pequeño que sea suficiente para alojar el proceso. Es decir, busca el bloque que minimice el espacio desperdiciado.
+Best Fit (Mejor Ajuste)
 
+Descripción general:
+El algoritmo Best Fit selecciona el bloque de memoria más pequeño que sea suficiente para alojar el proceso. Su objetivo es reducir al máximo el espacio sobrante en cada asignación.
+
+Pasos que sigue:
+
+Revisa todos los bloques disponibles con espacio suficiente.
+
+Calcula la diferencia entre el tamaño del bloque y el tamaño del proceso.
+
+Escoge el bloque con la menor diferencia posible.
+
+Realiza la asignación y actualiza el espacio libre restante.
+
+Ventajas:
+
+Reduce el desperdicio inmediato de memoria.
+
+Conserva bloques grandes para procesos que lo necesiten después.
+
+Desventajas:
+
+Puede generar muchos fragmentos pequeños difíciles de reutilizar.
+
+Requiere revisar todos los bloques, lo que puede hacerlo más lento.
+
+A largo plazo puede aumentar la fragmentación externa.
 **Proceso de decisión**:
 1. Examina todos los bloques con espacio libre suficiente para el proceso
 2. Calcula la diferencia entre el tamaño del bloque libre y el tamaño del proceso
